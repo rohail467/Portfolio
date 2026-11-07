@@ -1,0 +1,565 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<script>(function(){try{var t=localStorage.getItem("portfolio-theme");if(t==="dark"||t==="light"){document.documentElement.setAttribute("data-theme",t);}else if(window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches){document.documentElement.setAttribute("data-theme","dark");}else{document.documentElement.setAttribute("data-theme","light");}}catch(e){document.documentElement.setAttribute("data-theme","light");}})();</script>
+<meta name="description" content="Rohiii Afridai — Computer Science student (BSCS, 3rd semester) and aspiring software developer based in Peshawar, Pakistan. Programming in C++, Python and JavaScript; exploring AI, web development and software engineering." />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="Rohiii Afridai — Computer Science Student & Aspiring Software Developer" />
+<meta property="og:description" content="Portfolio of Rohiii Afridai: programming foundations in C++, web development, backend learning with Python & Flask, and a growing interest in AI and Generative AI." />
+<meta property="og:image" content="assets/images/portrait.jpg" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23142820'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='26' font-weight='700' fill='white' text-anchor='middle'%3ERA%3C/text%3E%3C/svg%3E" />
+<title>Rohiii Afridai — Computer Science Student & Aspiring Software Developer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap nav-inner">
+    <a class="brand" href="#home" aria-label="Rohiii Afridai — home">
+      <span class="brand-mark" aria-hidden="true">RA</span>
+      <span><span class="brand-name">Rohiii Afridai</span><br /><span class="brand-sub">Computer Science Student</span></span>
+    </a>
+    <nav class="links" aria-label="Primary">
+      <a href="#home" data-nav="home">Home</a>
+      <a href="#about" data-nav="about">About</a>
+      <a href="#skills" data-nav="skills">Skills</a>
+      <a href="#projects" data-nav="projects">Projects</a>
+      <a href="#education" data-nav="education">Education</a>
+      <a href="#journey" data-nav="journey">Journey</a>
+      <a href="#contact" data-nav="contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Switch to dark mode" aria-pressed="false" title="Toggle dark mode">
+        <svg class="icon-moon" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg class="icon-sun" width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><line x1="12" y1="2" x2="12" y2="4"/><line x1="12" y1="20" x2="12" y2="22"/><line x1="4.93" y1="4.93" x2="6.34" y2="6.34"/><line x1="17.66" y1="17.66" x2="19.07" y2="19.07"/><line x1="2" y1="12" x2="4" y2="12"/><line x1="20" y1="12" x2="22" y2="12"/><line x1="6.34" y1="17.66" x2="4.93" y2="19.07"/><line x1="19.07" y1="4.93" x2="17.66" y2="6.34"/></svg>
+      </button>
+      <a class="nav-cta" href="#contact">Get in Touch</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="4" y1="7" x2="20" y2="7"/><line x1="4" y1="12" x2="20" y2="12"/><line x1="4" y1="17" x2="20" y2="17"/></svg>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#home" data-nav="home">Home</a>
+    <a href="#about" data-nav="about">About</a>
+    <a href="#skills" data-nav="skills">Skills</a>
+    <a href="#projects" data-nav="projects">Projects</a>
+    <a href="#education" data-nav="education">Education</a>
+    <a href="#journey" data-nav="journey">Journey</a>
+    <a href="#contact" data-nav="contact">Contact</a>
+  </div>
+</header>
+
+<main>
+<!-- ================= HERO ================= -->
+<section class="hero" id="home">
+  <div class="wrap hero-grid">
+    <p class="h-eyebrow">Hello, I&rsquo;m</p>
+    <h1 class="h-name">Rohiii Afridai</h1>
+    <div class="h-photo">
+      <div class="photo-ring">
+        <img src="assets/images/portrait.jpg" alt="Portrait of Rohiii Afridai" width="800" height="1060" />
+      </div>
+    </div>
+    <p class="h-role">Computer Science Student | Aspiring Software Developer</p>
+    <div class="h-intro">
+      <p>I&rsquo;m a Computer Science student passionate about software development, problem-solving, and emerging technologies. I enjoy understanding how technology works, developing practical solutions, and continuously expanding my technical knowledge.</p>
+      <span class="focus-chip"><span class="focus-dot" aria-hidden="true"></span>Current focus: Software Development &amp; AI</span>
+    </div>
+    <div class="h-cta">
+      <a class="btn btn-primary" href="#projects">Explore My Work
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </a>
+      <a class="btn btn-ghost" href="#contact">Contact Me</a>
+    </div>
+    <div class="h-meta">
+      <div><strong>BS Computer Science</strong>3rd Semester</div>
+      <div><strong>C++ · Python · JavaScript</strong>Core languages</div>
+      <div><strong>Peshawar, Pakistan</strong>Location</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">About Me</p>
+      <h2>A foundation built on fundamentals</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-copy reveal">
+        <p>I am an undergraduate student pursuing a <strong>Bachelor of Science in Computer Science</strong>, currently in my third semester. My studies have given me a structured grounding in how programs are designed, how data is organised, and how software systems fit together.</p>
+        <p>My programming foundation is in <strong>C++</strong>, where I have worked through programming fundamentals, object-oriented programming, and data structures. Alongside my coursework, I am learning web development with HTML, CSS, JavaScript and Bootstrap, and backend development with Python, Flask and APIs.</p>
+        <p>I am particularly interested in <strong>artificial intelligence and generative AI</strong> — how modern models work, and how they can be applied carefully to real problems. I approach learning deliberately: understand the concept first, then practise it by building something small and concrete.</p>
+        <p>My goal is to become a skilled software developer who builds meaningful technology solutions, and to keep improving both my technical ability and my professional discipline as I progress through my degree.</p>
+      </div>
+      <aside class="info-panel reveal" aria-label="Quick facts">
+        <dl>
+          <div class="info-row"><dt>Degree</dt><dd>BS Computer Science</dd></div>
+          <div class="info-row"><dt>Academic Level</dt><dd>3rd Semester</dd></div>
+          <div class="info-row"><dt>Primary Language</dt><dd>C++</dd></div>
+          <div class="info-row"><dt>Current Focus</dt><dd>Software Development</dd></div>
+          <div class="info-row"><dt>Interests</dt><dd>AI, Web Development, Software Engineering</dd></div>
+          <div class="info-row"><dt>Location</dt><dd>Peshawar, Pakistan</dd></div>
+        </dl>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<!-- ================= SKILLS ================= -->
+<section class="section alt" id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Technical Skills</p>
+      <h2>What I work with</h2>
+      <p>Skills are labelled by how I actually use them today — my primary language, technologies I am comfortable with, and areas I am actively learning. No percentages, no inflated claims.</p>
+    </div>
+    <div class="skills-grid">
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>
+          <h3>Programming Languages</h3>
+        </div>
+        <p>The languages my coursework and practice are built on.</p>
+        <ul class="skill-list">
+          <li>C++ <span class="level level-primary">Primary</span></li>
+          <li>Python <span class="level level-solid">Comfortable</span></li>
+          <li>JavaScript <span class="level level-solid">Comfortable</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+          <h3>Frontend Development</h3>
+        </div>
+        <p>Building responsive, structured interfaces for the web.</p>
+        <ul class="skill-list">
+          <li>HTML5 <span class="level level-solid">Comfortable</span></li>
+          <li>CSS3 <span class="level level-solid">Comfortable</span></li>
+          <li>Bootstrap <span class="level level-solid">Comfortable</span></li>
+          <li>JavaScript <span class="level level-solid">Comfortable</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="8" rx="2"/><rect x="2" y="14" width="20" height="8" rx="2"/><line x1="6" y1="6" x2="6.01" y2="6"/><line x1="6" y1="18" x2="6.01" y2="18"/></svg></span>
+          <h3>Backend Development</h3>
+        </div>
+        <p>Currently learning how server-side applications and APIs work.</p>
+        <ul class="skill-list">
+          <li>Python <span class="level level-solid">Comfortable</span></li>
+          <li>Flask <span class="level level-learning">Learning</span></li>
+          <li>REST APIs <span class="level level-learning">Learning</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a7 7 0 0 1 7 7c0 2.4-1.2 4.2-2.6 5.6-.9.9-1.4 2.1-1.4 3.4H9c0-1.3-.5-2.5-1.4-3.4C6.2 13.2 5 11.4 5 9a7 7 0 0 1 7-7z"/><line x1="9" y1="22" x2="15" y2="22"/></svg></span>
+          <h3>CS Fundamentals</h3>
+        </div>
+        <p>The core concepts at the centre of my degree.</p>
+        <ul class="skill-list">
+          <li>Object-Oriented Programming <span class="level level-primary">Coursework</span></li>
+          <li>Data Structures <span class="level level-primary">Coursework</span></li>
+          <li>Algorithms <span class="level level-solid">Studying</span></li>
+          <li>Problem Solving <span class="level level-solid">Ongoing</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4.5 4.5 0 0 0-6 6L3 18l3 3 5.7-5.7a4.5 4.5 0 0 0 6-6L14 13.5 10.5 10 14.7 6.3z"/></svg></span>
+          <h3>Tools &amp; Platforms</h3>
+        </div>
+        <p>Everyday tools for writing, versioning and experimenting with code.</p>
+        <ul class="skill-list">
+          <li>Git <span class="level level-solid">Comfortable</span></li>
+          <li>GitHub <span class="level level-solid">Comfortable</span></li>
+          <li>VS Code <span class="level level-primary">Daily use</span></li>
+          <li>Jupyter Notebook <span class="level level-learning">Learning</span></li>
+        </ul>
+      </article>
+
+      <article class="skill-card reveal">
+        <div class="skill-head">
+          <span class="skill-icon"><svg width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+          <h3>How I Learn</h3>
+        </div>
+        <p>My method matters as much as the tools I use.</p>
+        <ul class="skill-list">
+          <li>Concept first, then code <span class="level level-solid">Habit</span></li>
+          <li>Small, finished practice projects <span class="level level-solid">Habit</span></li>
+          <li>Reading documentation <span class="level level-solid">Habit</span></li>
+          <li>Debugging systematically <span class="level level-solid">Habit</span></li>
+        </ul>
+      </article>
+    </div>
+    <p class="skills-note reveal">I am a third-semester student, and this page reflects that honestly: strong coursework foundations in C++, working knowledge of web technologies, and backend and AI topics that I am learning now rather than claiming as expertise.</p>
+  </div>
+</section>
+
+<!-- ================= PROJECTS ================= -->
+<section class="section" id="projects">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Projects</p>
+      <h2>Selected work &amp; project directions</h2>
+      <p>These entries describe what each project is and what I am building it to learn. Where a public demo or repository is not published yet, that is stated plainly rather than hidden behind a dead link.</p>
+    </div>
+    <div class="projects-grid">
+
+      <article class="project-card reveal">
+        <div class="code-window" aria-hidden="true">
+          <div class="cw-bar"><span></span><span></span><span></span></div>
+          <div><span class="c"># agentforge — prompt pipeline sketch</span></div>
+          <div><span class="k">def</span> <span class="f">run_agent</span>(task):</div>
+          <div>&nbsp;&nbsp;context = gather(task)</div>
+          <div>&nbsp;&nbsp;<span class="k">return</span> model.respond(context)</div>
+        </div>
+        <div class="project-body">
+          <div class="project-top"><span class="project-num">PROJECT 01</span><span class="status">In development</span></div>
+          <h3>Agentforge</h3>
+          <p class="project-cat">AI / Generative AI</p>
+          <p class="project-desc">A technology project focused on intelligent AI-powered functionality and practical applications of modern AI systems.</p>
+          <div class="tech-row"><span class="tech">Python</span><span class="tech">APIs</span><span class="tech">Generative AI</span></div>
+          <div class="project-detail" id="detail-1">
+            <strong>What this project is for:</strong>
+            <ul>
+              <li>Understanding how AI agents plan and carry out multi-step tasks.</li>
+              <li>Practising API integration and structured prompting.</li>
+              <li>Status: in development — a public demo link will be added when it is ready to show.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-toggle="detail-1" aria-expanded="false">View Project Details</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/rohail467" target="_blank" rel="noopener">GitHub Profile</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="code-window" aria-hidden="true">
+          <div class="cw-bar"><span></span><span></span><span></span></div>
+          <div><span class="c">// resume analyzer — match scoring</span></div>
+          <div><span class="k">function</span> <span class="f">scoreMatch</span>(resume, job) {</div>
+          <div>&nbsp;&nbsp;<span class="k">return</span> compare(skillsOf(resume),</div>
+          <div>&nbsp;&nbsp;&nbsp;&nbsp;needsOf(job)); }</div>
+        </div>
+        <div class="project-body">
+          <div class="project-top"><span class="project-num">PROJECT 02</span><span class="status">In development</span></div>
+          <h3>AI-Powered Resume Analyzer</h3>
+          <p class="project-cat">Artificial Intelligence / Web Application</p>
+          <p class="project-desc">An application designed to analyze resumes, evaluate their compatibility with job requirements, and provide actionable improvement suggestions.</p>
+          <div class="tech-row"><span class="tech">Python</span><span class="tech">Flask</span><span class="tech">JavaScript</span><span class="tech">NLP concepts</span></div>
+          <div class="project-detail" id="detail-2">
+            <strong>What this project is for:</strong>
+            <ul>
+              <li>Applying text analysis to a practical, everyday problem.</li>
+              <li>Connecting a Flask backend to a simple web interface.</li>
+              <li>Status: in development — repository link to be added on publication.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-toggle="detail-2" aria-expanded="false">View Project Details</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/rohail467" target="_blank" rel="noopener">GitHub Profile</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="code-window" aria-hidden="true">
+          <div class="cw-bar"><span></span><span></span><span></span></div>
+          <div><span class="c">&lt;!-- storefront — product grid --&gt;</span></div>
+          <div>&lt;<span class="k">section</span> <span class="f">class</span>=<span class="s">"products"</span>&gt;</div>
+          <div>&nbsp;&nbsp;{products.map(renderCard)}</div>
+          <div>&lt;/<span class="k">section</span>&gt;</div>
+        </div>
+        <div class="project-body">
+          <div class="project-top"><span class="project-num">PROJECT 03</span><span class="status done">Learning project</span></div>
+          <h3>E-Commerce Web Application</h3>
+          <p class="project-cat">Full-Stack Web Development</p>
+          <p class="project-desc">A responsive e-commerce application featuring product browsing, organized categories, and essential online shopping functionality.</p>
+          <div class="tech-row"><span class="tech">HTML5</span><span class="tech">CSS3</span><span class="tech">JavaScript</span><span class="tech">Bootstrap</span></div>
+          <div class="project-detail" id="detail-3">
+            <strong>What I practised with this build:</strong>
+            <ul>
+              <li>Responsive product layouts across phone, tablet and desktop.</li>
+              <li>Category organisation, cart interactions and checkout flow structure.</li>
+              <li>Keeping a larger front-end codebase organised and consistent.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-toggle="detail-3" aria-expanded="false">View Project Details</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/rohail467" target="_blank" rel="noopener">GitHub Profile</a>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal">
+        <div class="code-window" aria-hidden="true">
+          <div class="cw-bar"><span></span><span></span><span></span></div>
+          <div><span class="c">// next project — slot reserved</span></div>
+          <div><span class="k">const</span> nextProject = {</div>
+          <div>&nbsp;&nbsp;title: <span class="s">"To be announced"</span>,</div>
+          <div>&nbsp;&nbsp;status: <span class="s">"planning"</span> };</div>
+        </div>
+        <div class="project-body">
+          <div class="project-top"><span class="project-num">PROJECT 04</span><span class="status future">Future project</span></div>
+          <h3>Additional Projects</h3>
+          <p class="project-cat">Coming next</p>
+          <p class="project-desc">A reserved space for the next project — most likely a data-focused or backend project as my coursework progresses into databases and more advanced topics.</p>
+          <div class="tech-row"><span class="tech">To be decided</span></div>
+          <div class="project-detail" id="detail-4">
+            <strong>How this slot will be used:</strong>
+            <ul>
+              <li>Each finished project will get its own description, technology list and links here.</li>
+              <li>Only work that actually exists will be presented as finished.</li>
+            </ul>
+          </div>
+          <div class="project-actions">
+            <button class="btn btn-primary btn-sm" data-toggle="detail-4" aria-expanded="false">View Project Details</button>
+            <a class="btn btn-ghost btn-sm" href="https://github.com/rohail467" target="_blank" rel="noopener">GitHub Profile</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================= EDUCATION ================= -->
+<section class="section alt" id="education">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Education</p>
+      <h2>Academic background</h2>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item current">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Bachelor of Science in Computer Science (BSCS)</h3>
+        <div class="tl-meta"><span>[University Name]</span><span aria-hidden="true">·</span><span>3rd Semester</span><span class="tl-badge">Currently Studying</span></div>
+        <p>Developing a strong foundation in computer science, programming, data structures, algorithms, databases, and software engineering.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Core coursework so far</h3>
+        <div class="tl-meta"><span>Degree programme</span></div>
+        <p>Programming Fundamentals, Object-Oriented Programming, and Data Structures — the sequence my current C++ skills are built on — alongside supporting mathematics and computing subjects.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Ahead in the programme</h3>
+        <div class="tl-meta"><span>Upcoming semesters</span></div>
+        <p>Deeper study of algorithms, databases, operating systems and software engineering, which will shape the direction of my later projects.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= JOURNEY ================= -->
+<section class="section" id="journey">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Experience / Journey</p>
+      <h2>My learning journey</h2>
+      <p>These are learning milestones, presented in the order I worked through them — not employment experience.</p>
+    </div>
+    <div class="timeline reveal">
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Programming Fundamentals</h3>
+        <p>Started with the basics in C++: variables, control flow, functions and structured problem-solving. This is where careful, step-by-step thinking about code began.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Learning Object-Oriented Programming</h3>
+        <p>Moved on to classes, objects, encapsulation, inheritance and polymorphism — learning to organise code around well-defined responsibilities rather than long procedural scripts.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Exploring Data Structures &amp; Algorithms</h3>
+        <p>Working with arrays, linked lists, stacks, queues and introductory algorithm analysis, and learning to judge solutions by correctness and efficiency, not just output.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Learning Web Development</h3>
+        <p>Built responsive pages and interfaces with HTML, CSS, JavaScript and Bootstrap, including a full e-commerce front end as a learning project.</p>
+      </div>
+      <div class="tl-item">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Exploring AI &amp; Generative AI</h3>
+        <p>Studying how modern AI systems work and experimenting with AI-powered project ideas such as Agentforge and the Resume Analyzer, using Python and APIs.</p>
+      </div>
+      <div class="tl-item current">
+        <span class="tl-dot" aria-hidden="true"></span>
+        <h3>Building Practical Projects</h3>
+        <div class="tl-meta"><span class="tl-badge">Where I am now</span></div>
+        <p>Applying each new topic in a small, finished project, and learning backend development with Python and Flask alongside my degree.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPLORING ================= -->
+<section class="section alt" id="exploring">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Currently Learning</p>
+      <h2>What I&rsquo;m exploring</h2>
+      <p>The topics taking most of my study time outside the classroom right now.</p>
+    </div>
+    <div class="explore-grid">
+      <article class="explore-card reveal">
+        <span class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 2 7 12 12 22 7 12 2"/><polyline points="2 17 12 22 22 17"/><polyline points="2 12 12 17 22 12"/></svg></span>
+        <h3>Full-Stack Web Development</h3>
+        <p>Connecting front-end interfaces to real backends, so pages I build can store, process and serve data.</p>
+      </article>
+      <article class="explore-card reveal">
+        <span class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="2"/><rect x="9" y="9" width="6" height="6"/><line x1="9" y1="2" x2="9" y2="4"/><line x1="15" y1="2" x2="15" y2="4"/><line x1="9" y1="20" x2="9" y2="22"/><line x1="15" y1="20" x2="15" y2="22"/><line x1="2" y1="9" x2="4" y2="9"/><line x1="2" y1="15" x2="4" y2="15"/><line x1="20" y1="9" x2="22" y2="9"/><line x1="20" y1="15" x2="22" y2="15"/></svg></span>
+        <h3>Artificial Intelligence</h3>
+        <p>Understanding how AI systems are built and where they genuinely help, beyond the hype around them.</p>
+      </article>
+      <article class="explore-card reveal">
+        <span class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.9 4.6L18.5 9l-4.6 1.4L12 15l-1.9-4.6L5.5 9l4.6-1.4L12 3z"/><path d="M19 15l.8 2 2 .8-2 .8-.8 2-.8-2-2-.8 2-.8.8-2z"/></svg></span>
+        <h3>Generative AI Applications</h3>
+        <p>Experimenting with language-model APIs and prompt design through projects like Agentforge.</p>
+      </article>
+      <article class="explore-card reveal">
+        <span class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33h.01a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51h.01a1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82v.01a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z"/></svg></span>
+        <h3>Software Engineering</h3>
+        <p>Version control habits, clean code structure, and how larger projects are planned and maintained.</p>
+      </article>
+      <article class="explore-card reveal">
+        <span class="skill-icon"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg></span>
+        <h3>Backend Development</h3>
+        <p>Learning Python and Flask: routes, request handling, REST APIs and how data moves through an application.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section class="section contact-section" id="contact">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <p class="sec-label">Contact</p>
+      <h2>Let&rsquo;s connect</h2>
+      <p>I&rsquo;m always interested in connecting with developers, learning from experienced professionals, exploring opportunities, and discussing meaningful technology projects.</p>
+    </div>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p class="contact-intro">The fastest way to reach me is email. I&rsquo;m based in Peshawar, Pakistan, and I read every message myself — if you are a fellow student, a developer, or someone with a project in mind, I would be glad to hear from you.</p>
+        <div class="contact-list">
+          <a class="contact-item" href="mailto:studentuni725@gmail.com">
+            <span class="skill-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></span>
+            <span><small>Email</small><span>studentuni725@gmail.com</span></span>
+          </a>
+          <a class="contact-item" href="https://www.linkedin.com/in/rohail-afridai-b11250361" target="_blank" rel="noopener">
+            <span class="skill-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></span>
+            <span><small>LinkedIn</small><span>rohail-afridai-b11250361</span></span>
+          </a>
+          <a class="contact-item" href="https://github.com/rohail467" target="_blank" rel="noopener">
+            <span class="skill-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12"/></svg></span>
+            <span><small>GitHub</small><span>github.com/rohail467</span></span>
+          </a>
+          <div class="contact-item" aria-label="Location">
+            <span class="skill-icon"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg></span>
+            <span><small>Location</small><span>Peshawar, Pakistan</span></span>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-status" id="formStatus" role="status" aria-live="polite"></div>
+        <div class="field" id="f-name">
+          <label for="inputName">Full Name</label>
+          <input type="text" id="inputName" name="name" autocomplete="name" placeholder="Your name" />
+          <p class="error">Please enter your full name (at least 2 characters).</p>
+        </div>
+        <div class="field" id="f-email">
+          <label for="inputEmail">Email Address</label>
+          <input type="email" id="inputEmail" name="email" autocomplete="email" placeholder="you@example.com" />
+          <p class="error">Please enter a valid email address.</p>
+        </div>
+        <div class="field" id="f-subject">
+          <label for="inputSubject">Subject</label>
+          <input type="text" id="inputSubject" name="subject" placeholder="What is this about?" />
+          <p class="error">Please add a subject (at least 3 characters).</p>
+        </div>
+        <div class="field" id="f-message">
+          <label for="inputMessage">Message</label>
+          <textarea id="inputMessage" name="message" placeholder="Write your message…"></textarea>
+          <p class="error">Please write a message of at least 10 characters.</p>
+        </div>
+        <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">
+          Send Message
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        </button>
+        <p class="form-note">This form opens your email app with the message pre-filled and addressed to studentuni725@gmail.com — nothing is sent until you press send there.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= OWNER NOTES ================= -->
+<section class="section" style="padding-top:0" aria-label="Notes for the site owner">
+  <div class="wrap owner-notes reveal">
+    <details>
+      <summary>For the site owner — updating &amp; publishing this portfolio</summary>
+      <div class="notes-body">
+        <p><strong>To update personal details:</strong> open <code>index.html</code> and edit the text directly — the name, email, LinkedIn and GitHub links appear in the hero, contact section and footer. The one remaining placeholder is the university name, shown as <code>[University Name]</code> in the Education section; replace it there when ready.</p>
+        <ul>
+          <li><strong>Photo:</strong> replace <code>assets/profile.jpg</code> with a new portrait, keeping the same file name.</li>
+          <li><strong>Project links:</strong> in each project card, replace the “GitHub Profile” button link with the specific repository URL once the project is published.</li>
+          <li><strong>Running locally:</strong> open <code>index.html</code> in any browser — no server or build step is needed.</li>
+          <li><strong>Publishing:</strong> upload <code>index.html</code> and the <code>assets</code> folder to GitHub Pages, Netlify or Vercel (drag-and-drop works on Netlify).</li>
+        </ul>
+      </div>
+    </details>
+  </div>
+</section>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div>
+        <p class="f-name">Rohiii Afridai</p>
+        <p class="f-tag">Computer Science student building strong programming foundations and practical software skills.</p>
+      </div>
+      <nav aria-label="Footer">
+        <a href="#home">Home</a><a href="#about">About</a><a href="#skills">Skills</a><a href="#projects">Projects</a><a href="#education">Education</a><a href="#journey">Journey</a><a href="#contact">Contact</a>
+      </nav>
+      <div class="f-social">
+        <a href="https://www.linkedin.com/in/rohail-afridai-b11250361" target="_blank" rel="noopener" aria-label="LinkedIn profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.55V9h3.57v11.45z"/></svg></a>
+        <a href="https://github.com/rohail467" target="_blank" rel="noopener" aria-label="GitHub profile"><svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 21.795 24 17.298 24 12c0-6.627-5.373-12-12-12"/></svg></a>
+        <a href="mailto:studentuni725@gmail.com" aria-label="Send email"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></a>
+      </div>
+    </div>
+    <div class="f-bottom">
+      <span>© <span id="year"></span> Rohiii Afridai. All rights reserved.</span>
+      <span>Designed and developed with attention to detail.</span>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" aria-label="Back to top">
+  <svg width="19" height="19" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg>
+</button>
+
+<script src="js/script.js"></script>
+</body>
+</html>
